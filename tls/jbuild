@@ -1,0 +1,7 @@
+(jbuild_version 1)
+
+(library
+ ((name irc_client_tls)
+  (public_name irc-client-tls)
+  (libraries (irc-client lwt tls))
+))

@@ -1,0 +1,8 @@
+(jbuild_version 1)
+
+(library
+ ((name irc_client_unix)
+  (public_name irc-client-unix)
+  (libraries (irc-client unix))
+))
+

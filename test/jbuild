@@ -1,0 +1,12 @@
+(jbuild_version 1)
+
+(executables
+ ((names (test_unit_main))
+  (libraries (oUnit irc-client))
+))
+
+(alias
+ ((name runtest)
+  (deps (test_unit_main.exe))
+  (action (run ${<}))
+))

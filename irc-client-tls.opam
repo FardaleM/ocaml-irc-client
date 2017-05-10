@@ -1,0 +1,20 @@
+opam-version: "1.2"
+authors: ["John Else" "Simon Cruanes"]
+homepage: "https://github.com/johnelse/ocaml-irc-client"
+bug-reports: "https://github.com/johnelse/ocaml-irc-client/issues"
+dev-repo: "git://github.com/johnelse/ocaml-irc-client"
+maintainer: "john.else@gmail.com"
+build: [
+  ["jbuilder" "subst"] {pinned}
+  ["jbuilder" "build" "-p" name]
+]
+depends: [
+  "jbuilder" {build}
+  "ocamlfind" {build}
+  "irc-client"
+  "lwt"
+  "tls"
+]
+available: [
+  ocaml-version >= "4.00.1"
+]

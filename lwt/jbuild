@@ -1,0 +1,7 @@
+(jbuild_version 1)
+
+(library
+ ((name irc_client_lwt)
+  (public_name irc-client-lwt)
+  (libraries (irc-client lwt))
+))

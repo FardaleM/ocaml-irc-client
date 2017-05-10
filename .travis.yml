@@ -9,10 +9,10 @@ script:
   - if dpkg --compare-versions $OCAML_VERSION eq 4.02; then COV_CONF="./configure --enable-tests" bash -ex travis-coveralls.sh; fi
 env:
   global:
-    - PACKAGE=irc-client
+    - PINS="irc-client:. irc-client-unix:. irc-client-tls:. irc-client-unix:."
     - secure: HMOw08dBgnS19iKTlNeH34G02EJZLJLsC3CBLxJ5qRK+fbryEGAGt7RQ4jWN8JkkxtiFMIcZ7am2HCGZT9nIGDhmUTsJcclR0027LNVE2/Ax+7wdq915qPiFVMh7hMi+SiPFCEKSWEBA3b6RumZFMoUFFfSX4I/0rHzjz6wt0us=
   matrix:
-    - OCAML_VERSION=4.02 DOCS=true KEEP=false
-    - OCAML_VERSION=4.03
-    - OCAML_VERSION=4.04
-    - OCAML_VERSION=4.05
+    - OCAML_VERSION=4.04 PACKAGE=irc-client DOCS=true KEEP=false
+    - OCAML_VERSION=4.04 PACKAGE=irc-client-lwt
+    - OCAML_VERSION=4.04 PACKAGE=irc-client-tls
+    - OCAML_VERSION=4.04 PACKAGE=irc-client-unix

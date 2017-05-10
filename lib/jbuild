@@ -1,0 +1,8 @@
+(jbuild_version 1)
+
+(library
+ ((name irc_client)
+  (public_name irc-client)
+  (wrapped false)
+  (libraries (bytes result))
+))
