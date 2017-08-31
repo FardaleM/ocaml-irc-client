@@ -12,5 +12,8 @@ install:
 uninstall:
 	jbuilder uninstall
 
+examples: build
+	jbuilder build @DEFAULT
+
 clean:
 	rm -rf _build *.install

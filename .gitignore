@@ -1,6 +1,6 @@
 *.install
 *.swp
-*/.merlin
+**/.merlin
 
 _build
 oUnit-anon.cache

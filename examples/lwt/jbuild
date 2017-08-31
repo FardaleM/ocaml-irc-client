@@ -1,0 +1,13 @@
+(jbuild_version 1)
+
+(executables
+ ((names (example1 example2))
+  (libraries (lwt.unix irc-client-lwt))
+ )
+)
+
+(alias
+ ((name DEFAULT)
+  (deps (example1.exe example2.exe))
+ )
+)

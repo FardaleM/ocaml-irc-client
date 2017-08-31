@@ -1,0 +1,13 @@
+(jbuild_version 1)
+
+(executables
+ ((names (example_tls))
+  (libraries (tls.lwt irc-client-tls))
+ )
+)
+
+(alias
+ ((name DEFAULT)
+  (deps (example_tls.exe))
+ )
+)
